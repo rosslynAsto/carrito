@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:ital,wght@0,500;0,600;1,600&display=swap');
+:root{
+    --color-button: rgba(64, 238, 61, 0.6);
+    --z-iconCart: 1000;
+    --z-contentShopping:500;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif; 
+}
+ button{
+     outline: none;
+     border: none;
+     cursor: pointer;
+     padding: 0.5em;
+     font-size: .5em;
+     border-radius: 5px;
+     background-color: var(--color-button);
+
+ }
+img{
+    width: 100%;
+    display: block;
+}
+p{
+    font-size: .7em;
+}
+.cartShopping{
+    cursor: pointer;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    transition: opacity 0.5s;
+    z-index: var(--z-iconCart);
+}
+.cartShopping:hover{
+    opacity: 0.6;
+}
+.container__principal{
+    max-width: 1024px;
+    margin: auto;
+}
+.content_shoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1em;
+    padding: 1em 1em;
+}
+.shoes{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+.shoes__img{
+    width: 260px;    
+    border-radius: 5px;
+}
+.container__shopping{
+    width: 30vh;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0, 0,0, 0.175);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: var(--z-contentShopping);
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+    margin-right: -100%;
+    padding: 0.3em;
+    transition: margin-right 0.5s;
+    overflow-y: scroll;
+}
+
+.show__shopping{
+    margin-right: 0;
+}
+.content__shopping{
+    height: 80%;
+    background-color: #F1F1F1;
+}
+.content__total{
+    height: 20%;
+    background-color: #F7ECDE;
+    
+}
+.shopping__img{
+    
+    width: 200px;
+    margin-top: .2em;  
+   
+}
+.shopping__header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    align-items: flex-start;
+   
+}
+
+.rest,
+.add,
+.del{
+    cursor: pointer;
+}
+
