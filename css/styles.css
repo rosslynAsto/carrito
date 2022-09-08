@@ -80,12 +80,17 @@ p{
 }
 .content__shopping{
     height: 80%;
-    background-color: #F1F1F1;
+    /* background-color: #F1F1F1; */
 }
 .content__total{
-    height: 20%;
-    background-color: #F7ECDE;
-    
+    height: 10%;
+    /* background-color:#F1F1F1; */
+    margin-top: 3em;
+    padding: 1em ;
+}
+.content__total p{
+    font-size: 1em;
+    color: red;
 }
 .shopping__img{
     
@@ -107,3 +112,13 @@ p{
     cursor: pointer;
 }
 
+.content__cartShopping{
+    position: relative;
+}
+.content__cartShopping span{
+    position: absolute;
+    top:-8px;
+    right: -8px;
+    font-size: 1.2em;
+    color: red;
+}

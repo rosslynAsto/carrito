@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.css">
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
@@ -18,37 +18,25 @@
         <div class="content_shoes"></div>
     </main>
     <div class="cartShopping">
-        <i class='bx bxs-cart-alt bx-md'></i>
+        <div class="content__cartShopping">
+            <span class="infoQuatityProducts">0</span>
+            <i class='bx bxs-cart-alt bx-md'></i>
+        </div>
+      
     </div>
     <div class="container__shopping">
-        <div class="content__shopping">
-            <div class="shopping">
-                <div class="shopping__header">
-                    <div class="shopping__img">
-                        <img src="images/image1.jpg" alt="">
-                    </div>
-                    <div class="shopping__info">
-                        <p>Nombre:</p>
-                        <p>Precio</p>
-                        <p>Stock</p>
-                    </div>
-                </div>                
-               
-                <div class="shopping__actions">
-                    <span class="rest">-</span>
-                    <b class="amount">0</b>
-                    <span class="add">+</span>
-                    <i class='bx bxs-trash del'></i>
-                </div>
-            </div>
-        </div>
         <div class="content__total">
             <p>Costo Total: <span class="shoppingTotal"></span></p>
             <button>Comprar</button>
         </div>
+        <div class="content__shopping">
+           
+        </div>
+       
     </div>
   
    
     <script src="./main.js" type="module"></script>
+    
 </body>
 </html>
