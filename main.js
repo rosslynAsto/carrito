@@ -84,7 +84,7 @@ contentShoes.addEventListener("click",(event)=>{
             shoppingObj[id].amount++;    
             localStorage.setItem("shoppingObj",JSON.stringify(shoppingObj));            
          }else{
-            Swal.fire('No hay stock')
+            Swal.fire('Agotado')
          }
           
      }else{
